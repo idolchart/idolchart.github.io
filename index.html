@@ -1,1 +1,85 @@
-testing
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Song chart for idols." />
+        
+        <title>Song Chart Rankings</title>
+        
+        <style>
+            body{
+            background-color: #ffe;
+            background-color: #fee;
+            background-color: #E6ECF0;
+            font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+            font-size: 100%;
+            }
+
+            a:link{ color: #08f; text-decoration: none; }
+            a:visited{ color: #08f; text-decoration: none; }
+            a:hover{ color: #08f; text-decoration: none; }
+            a:active{ color: #0af; text-decoration: none; }
+
+            #rankingsTableDiv{
+            margin: auto;
+            width: 90%;
+            }
+
+            #rankingsTable{
+            width: 100%;
+            }
+
+            #rankingsTableTitle{
+            width: 100%;
+            font-size: 200%;
+            font-weight: bold;
+            }
+
+            #rankingsTable td{
+            border: 1px solid black;
+            padding: 3px;
+            }
+
+            .rankingsTableDivider{
+            background-color: #888;
+            }
+
+            .rankingsTableOdd{
+            background-color: #bbb;
+            }
+            .rankingsTableEven{
+            background-color: #eee;
+            }
+        </style>
+        </head>
+        <body>
+        <div id="nojs">
+            Enable JavaScript to see the rankings!
+        </div>
+
+        <div id="rankingsTableDiv">
+            <div id="rankingsTableTitle"></div>
+            <div id="rankingsTableLastUpdate"></div>
+            <br>
+            <table id="rankingsTable" cellpadding=0 cellspacing=0 style="border: 1px solid black;">
+                <tr class="rankingsTableDivider">
+                <td>Rank</td>
+                <td>Title</td>
+                <td>Link</td>
+                </tr>
+            </table>
+        </div>
+        <!--<br><br><div><center>click here to listen to OIC radio (top songs are played more often)</center></div>-->
+        </body></html>
+
+        <script>
+        var $ = function (value){
+            return document.getElementById(value);
+        }
+
+        $("nojs").style.display = "none";
+
+        $("rankingsTableTitle").innerHTML = "<center>" + document.title + "</center>";
+            $("rankingsTableLastUpdate").innerHTML = "            <center><strong>Last Updated: </strong>13:56 JST            <br>            <!--Hourly, Daily, Weekly, Monthly, Quarterly, 6 month, Yearly--></center>            ";             $("rankingsTable").innerHTML += `                            <tr class=rankingsTableOdd>                                <td>1</td>                                <td>Interlunium - Level Up (Altair/ENG Version)</td>                                <td><a href=https://www.youtube.com/watch?v=upiMiPJ0jdI>Link</a></td>                            </tr>                                                    <tr class=rankingsTableEven>                                <td>2</td>                                <td>Stellure~ "Unwritten" Lyric Video Color Coded</td>                                <td><a href=https://www.youtube.com/watch?v=5v6_BLmZNu8>Link</a></td>                            </tr>                                                    <tr class=rankingsTableOdd>                                <td>3</td>                                <td>🍕 PizzaYolo 🍕 「 PIZZA PIZZA 」 (MV)</td>                                <td><a href=https://www.youtube.com/watch?v=2wtLRKRRW2c>Link</a></td>                            </tr>                                                    <tr class=rankingsTableEven>                                <td>4</td>                                <td>Niji Universe Inc. 虹バス - Ai'm Loving You 愛'm Loving You (ALY) OFFICIAL MV</td>                                <td><a href=https://www.youtube.com/watch?v=vCPVr3lcQOI>Link</a></td>                            </tr>                                                    <tr class=rankingsTableOdd>                                <td>5</td>                                <td>Hello Days 【MV】/ Flusay Girls [公式] 【フルセイ少女】</td>                                <td><a href=https://www.youtube.com/watch?v=u4eRG7zwsWk>Link</a></td>                            </tr>                                                    <tr class=rankingsTableEven>                                <td>6</td>                                <td>【チャンスちょうだい】Official Single</td>                                <td><a href=https://www.youtube.com/watch?v=jmWzPkh3DUg>Link</a></td>                            </tr>                                                    <tr class=rankingsTableOdd>                                <td>7</td>                                <td>黒姫のサードシングル｜Kuro Hime's 3rd Single【Everyday!幸せ!】</td>                                <td><a href=https://www.youtube.com/watch?v=ejpjzH9PwXM>Link</a></td>                            </tr>                                                    <tr class=rankingsTableEven>                                <td>8</td>                                <td>【Legacy】Spring is in the Air (Music Video)</td>                                <td><a href=https://www.youtube.com/watch?v=huHkygqY-Lg>Link</a></td>                            </tr>                                                    <tr class=rankingsTableOdd>                                <td>9</td>                                <td>Renaissance☆彡 - Astreal Idols</td>                                <td><a href=https://www.youtube.com/watch?v=r8SEUdUtum0>Link</a></td>                            </tr>                                                    <tr class=rankingsTableEven>                                <td>10</td>                                <td>【MV】Brand New Me / Crystal Rose [公式]</td>                                <td><a href=https://www.youtube.com/watch?v=GKkgUZmHUk8>Link</a></td>                            </tr>                        `;            </script>    
